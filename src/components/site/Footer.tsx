@@ -1,4 +1,5 @@
 import { Send, Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
+import logoWhite from "@/assets/binary-vision-logo-white.png";
 import case1 from "@/assets/case-1.jpg";
 import case2 from "@/assets/case-2.jpg";
 import case3 from "@/assets/case-3.jpg";
@@ -13,9 +14,8 @@ export function Footer() {
     <footer className="bg-gradient-dark text-white pt-20 pb-8">
       <div className="container-x grid md:grid-cols-2 lg:grid-cols-4 gap-10">
         <div>
-          <a href="#home" className="flex items-center gap-2">
-            <span className="grid h-9 w-9 place-items-center rounded-xl bg-white text-primary font-display font-bold text-sm">B</span>
-            <span className="font-display text-xl font-bold">BINARY</span>
+          <a href="#home" className="inline-flex items-center" aria-label="Binary Vision AI">
+            <img src={logoWhite} alt="Binary Vision AI" className="h-12 w-auto object-contain" />
           </a>
           <p className="mt-5 text-sm text-white/70 leading-relaxed">
             Binary Vision AI delivers premium IT services that help ambitious businesses scale faster, ship safer and grow smarter.
