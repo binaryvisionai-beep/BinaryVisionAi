@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Search, Globe, Menu, X } from "lucide-react";
+import logo from "@/assets/binary-vision-logo.png";
 
 const links = [
   { label: "Home", href: "#home" },
@@ -30,13 +31,13 @@ export function Navbar() {
       style={{ transitionTimingFunction: "cubic-bezier(0.4, 0, 0.2, 1)" }}
     >
       <div className="container-x flex h-20 items-center justify-between">
-        <a href="#home" className="flex items-center gap-2">
-          <span className="grid h-9 w-9 place-items-center rounded-xl bg-gradient-brand text-white font-display font-bold text-sm shadow-glow">
-            B
-          </span>
-          <span className="font-display text-xl font-bold tracking-tight text-heading">
-            BINARY<span className="text-gradient-brand">.</span>
-          </span>
+        <a href="#home" className="flex items-center" aria-label="Binary Vision AI">
+          <img
+            src={logo}
+            alt="Binary Vision AI"
+            className="h-10 md:h-11 w-auto object-contain transition-transform duration-300 hover:scale-[1.03]"
+            style={{ transitionTimingFunction: "cubic-bezier(0.4, 0, 0.2, 1)" }}
+          />
         </a>
 
         <nav className="hidden lg:flex items-center gap-9">
