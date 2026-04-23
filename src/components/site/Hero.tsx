@@ -59,7 +59,7 @@ export function Hero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="mt-12 flex items-center gap-8"
+            className="mt-12 flex flex-wrap items-center gap-x-6 gap-y-4 sm:gap-8"
           >
             <div>
               <div className="font-display text-2xl font-bold text-heading">2.5k+</div>
