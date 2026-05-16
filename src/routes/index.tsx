@@ -39,7 +39,7 @@ function Index() {
         <Industries />
         <CaseStudies />
         <Stats />
-        <Pricing />
+        {/* <Pricing /> */}
         <Testimonials />
         <Blog />
         <CtaStrip />
