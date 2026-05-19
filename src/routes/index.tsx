@@ -37,10 +37,10 @@ function Index() {
         <About />
         <Services />
         <Industries />
-        <CaseStudies />
+        {/* <CaseStudies /> */}
         <Stats />
         {/* <Pricing /> */}
-        <Testimonials />
+        {/* <Testimonials /> */}
         <Blog />
         <CtaStrip />
         <Contact />

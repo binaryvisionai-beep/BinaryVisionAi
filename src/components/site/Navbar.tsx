@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Search, Globe, Menu, X } from "lucide-react";
-import logo from "@/assets/binary-vision-logo.png";
+import logo from "@/assets/binary-vision-logo-transparent.png";
 
 const links = [
   { label: "Home", href: "#home" },
@@ -32,12 +32,17 @@ export function Navbar() {
     >
       <div className="container-x flex h-20 items-center justify-between">
         <a href="#home" className="flex items-center" aria-label="Binary Vision AI">
-          <img
+          {/* <img
             src={logo}
             alt="Binary Vision AI"
             className="h-10 md:h-11 w-auto object-contain transition-transform duration-300 hover:scale-[1.03]"
             style={{ transitionTimingFunction: "cubic-bezier(0.4, 0, 0.2, 1)" }}
-          />
+          /> */}
+          <img
+  src={logo}
+  alt="Binary Vision AI"
+  className="h-14 md:h-16 w-auto object-contain filter-none transition-transform duration-300 hover:scale-[1.04]"
+  />
         </a>
 
         <nav className="hidden lg:flex items-center gap-9">
@@ -56,9 +61,9 @@ export function Navbar() {
           <button aria-label="Search" className="text-heading/70 hover:text-primary transition-colors">
             <Search size={18} />
           </button>
-          <button className="flex items-center gap-1.5 text-sm font-medium text-heading/80 hover:text-primary transition-colors">
+          {/* <button className="flex items-center gap-1.5 text-sm font-medium text-heading/80 hover:text-primary transition-colors">
             <Globe size={16} /> EN
-          </button>
+          </button> */}
           <a href="#contact" className="btn-gradient text-sm">Get a quote now</a>
         </div>
 

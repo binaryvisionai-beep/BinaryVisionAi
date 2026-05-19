@@ -5,9 +5,9 @@ import { SectionHeader } from "./SectionHeader";
 const ease = [0.4, 0, 0.2, 1] as const;
 
 const contacts = [
-  { icon: MapPin, title: "Our Office", body: "1280 Market Street, Suite 400\nSan Francisco, CA 94102" },
-  { icon: Phone, title: "Call Us Anytime", body: "+1 (415) 555-0192\n+1 (415) 555-0193" },
-  { icon: Mail, title: "Email Us", body: "hello@binaryvision.ai\nsupport@binaryvision.ai" },
+  // { icon: MapPin, title: "Our Office", body: "1280 Market Street, Suite 400\nSan Francisco, CA 94102" },
+  { icon: Phone, title: "Call Us Anytime", body: "77559 01707" },
+  { icon: Mail, title: "Email Us", body: "binaryvisionai@gmail.com" },
 ];
 
 export function Contact() {
@@ -57,10 +57,10 @@ export function Contact() {
             <div className="mt-5">
               <label className="block text-sm font-semibold text-heading mb-2">Service Interested In</label>
               <select className="w-full rounded-xl border border-border bg-background px-4 py-3.5 text-heading focus:outline-none focus:ring-2 focus:ring-primary-glow transition">
-                <option>Cloud Infrastructure</option>
-                <option>AI & Data Engineering</option>
-                <option>Cybersecurity</option>
-                <option>Digital Transformation</option>
+                <option>Web & Mobile Development</option>
+                <option>E-Commerce Solutions</option>
+                <option>API & Backend Integration</option>
+                <option>Digital Transformation and Performance</option>
               </select>
             </div>
             <div className="mt-5">

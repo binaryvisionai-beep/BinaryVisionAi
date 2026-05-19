@@ -1,5 +1,5 @@
 import { Send, Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
-import logoWhite from "@/assets/binary-vision-logo-white.png";
+import logoWhite from "@/assets/bva_tlogoo.png";
 import case1 from "@/assets/case-1.jpg";
 import case2 from "@/assets/case-2.jpg";
 import case3 from "@/assets/case-3.jpg";
@@ -43,10 +43,9 @@ export function Footer() {
         <div>
           <h4 className="font-display text-lg text-white">Official Info</h4>
           <ul className="mt-5 space-y-3 text-sm text-white/70">
-            <li>1280 Market Street, San Francisco</li>
-            <li>+1 (415) 555-0192</li>
-            <li>hello@binaryvision.ai</li>
-            <li>Mon — Fri: 9:00 — 18:00 PST</li>
+            {/* <li>1280 Market Street, San Francisco</li> */}
+            <li>77559 01707</li>
+            <li>binaryvisionai@gmail.com</li>
           </ul>
         </div>
 

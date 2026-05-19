@@ -6,9 +6,27 @@ import b2 from "@/assets/blog-2.jpg";
 import b3 from "@/assets/blog-3.jpg";
 
 const posts = [
-  { img: b1, date: "Apr 12, 2026", title: "How AI agents are reshaping enterprise IT operations", desc: "Five emerging patterns we're seeing across customer deployments this quarter.", author: "Alex Kim" },
-  { img: b2, date: "Apr 04, 2026", title: "The real cost of legacy infrastructure in 2026", desc: "A practical framework for quantifying technical debt and prioritizing modernization.", author: "Maya Patel" },
-  { img: b3, date: "Mar 28, 2026", title: "Edge compute is finally ready for production workloads", desc: "Why latency-sensitive applications are moving closer to users — and what to consider.", author: "Jordan Lee" },
+  {
+    img: b1,
+    date: "Apr 12, 2026",
+    title: "Where AI replaces manual work in businesses",
+    desc: "Common business tasks that can be fully automated using AI and smart workflows.",
+    author: "Binary Vision AI",
+  },
+  {
+    img: b2,
+    date: "Apr 04, 2026",
+    title: "How we design automation-first systems",
+    desc: "Our approach to building platforms that scale without increasing manpower.",
+    author: "Binary Vision AI",
+  },
+  {
+    img: b3,
+    date: "Mar 28, 2026",
+    title: "The mindset behind AI product development",
+    desc: "Why we think like product builders when creating AI-driven solutions.",
+    author: "Binary Vision AI",
+  },
 ];
 
 const ease = [0.4, 0, 0.2, 1] as const;
@@ -19,8 +37,8 @@ export function Blog() {
       <div className="container-x">
         <SectionHeader
           eyebrow="Insights"
-          title={<>Our Latest Blog</>}
-          description="Deep dives, playbooks and strategic perspectives from our engineering and consulting teams."
+          title={<>What We Build & Learn</>}
+          description="Real-world thinking behind the AI systems and automations we create."
         />
 
         <div className="mt-14 grid md:grid-cols-2 lg:grid-cols-3 gap-7">
@@ -35,7 +53,14 @@ export function Blog() {
               style={{ transitionTimingFunction: "cubic-bezier(0.4, 0, 0.2, 1)" }}
             >
               <div className="overflow-hidden aspect-[16/10]">
-                <img src={p.img} alt={p.title} loading="lazy" width={1024} height={768} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+                <img
+                  src={p.img}
+                  alt={p.title}
+                  loading="lazy"
+                  width={1024}
+                  height={768}
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                />
               </div>
               <div className="p-7">
                 <div className="flex items-center gap-2 text-xs text-body">
@@ -48,12 +73,20 @@ export function Blog() {
                 <div className="mt-6 flex items-center justify-between border-t border-border pt-5">
                   <div className="flex items-center gap-3">
                     <div className="grid h-9 w-9 place-items-center rounded-full bg-gradient-brand text-white text-xs font-bold">
-                      {p.author.split(" ").map((n) => n[0]).join("")}
+                      {p.author
+                        .split(" ")
+                        .map((n) => n[0])
+                        .join("")}
                     </div>
-                    <span className="text-sm font-medium text-heading">{p.author}</span>
+                    <span className="text-sm font-medium text-heading">
+                      {p.author}
+                    </span>
                   </div>
-                  <a href="#" className="inline-flex items-center gap-1 text-sm font-semibold text-primary group-hover:gap-2 transition-all">
-                    More details <ArrowUpRight size={14} />
+                  <a
+                    href="#"
+                    className="inline-flex items-center gap-1 text-sm font-semibold text-primary group-hover:gap-2 transition-all"
+                  >
+                    Read insight <ArrowUpRight size={14} />
                   </a>
                 </div>
               </div>

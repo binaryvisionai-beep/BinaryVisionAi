@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowRight, Play } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import heroImg from "@/assets/hero-business.jpg";
 
 const ease = [0.4, 0, 0.2, 1] as const;
@@ -38,7 +38,7 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 0.25, ease }}
             className="mt-6 max-w-xl text-base md:text-lg text-body leading-relaxed"
           >
-            We deliver enterprise-grade IT solutions powered by AI, cloud and data engineering — engineered to scale your business with absolute reliability and measurable results.
+            Binary Vision AI builds practical AI solutions that automate tasks, improve efficiency, and create scalable digital systems for growing businesses.
           </motion.p>
 
           <motion.div
@@ -50,9 +50,6 @@ export function Hero() {
             <a href="#services" className="btn-gradient">
               Explore Services <ArrowRight size={18} />
             </a>
-            <a href="#about" className="btn-outline">
-              <Play size={16} /> Watch Intro
-            </a>
           </motion.div>
 
           <motion.div
@@ -62,20 +59,25 @@ export function Hero() {
             className="mt-12 flex flex-wrap items-center gap-x-6 gap-y-4 sm:gap-8"
           >
             <div>
-              <div className="font-display text-2xl font-bold text-heading">2.5k+</div>
-              <div className="text-xs text-body uppercase tracking-wider">Happy Clients</div>
+              <div className="font-display text-2xl font-bold text-heading">AI Solutions</div>
+              <div className="text-xs text-body uppercase tracking-wider">Intelligent Automation</div>
             </div>
             <div className="h-10 w-px bg-border" />
             <div>
-              <div className="font-display text-2xl font-bold text-heading">99.9%</div>
-              <div className="text-xs text-body uppercase tracking-wider">Uptime SLA</div>
+              <div className="font-display text-2xl font-bold text-heading">Modern Tech Stack</div>
+              <div className="text-xs text-body uppercase tracking-wider">Latest AI & Web Technologies</div>
             </div>
             <div className="h-10 w-px bg-border" />
             <div>
-              <div className="font-display text-2xl font-bold text-heading">4.9/5</div>
-              <div className="text-xs text-body uppercase tracking-wider">Client Rating</div>
+              <div className="font-display text-2xl font-bold text-heading">Scalable Systems</div>
+              <div className="text-xs text-body uppercase tracking-wider">Designed for Growth</div>
+            </div>
+            <div>
+              <div className="font-display text-2xl font-bold text-heading">Smart Workflows</div>
+              <div className="text-xs text-body uppercase tracking-wider">Process Optimization</div>
             </div>
           </motion.div>
+          
         </div>
 
         <motion.div
@@ -88,27 +90,12 @@ export function Hero() {
           <div className="relative rounded-[2rem] overflow-hidden shadow-brand ring-1 ring-border">
             <img
               src={heroImg}
-              alt="Business team collaborating on IT solutions"
+              alt="Team designing AI and automation systems"
               width={1280}
               height={1280}
               className="w-full h-auto object-cover"
             />
           </div>
-          {/* Floating card */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.9, ease }}
-            className="absolute -bottom-6 -left-6 bg-background rounded-2xl shadow-brand p-4 flex items-center gap-3 ring-1 ring-border"
-          >
-            <div className="grid h-12 w-12 place-items-center rounded-xl bg-gradient-brand text-white">
-              <Play size={20} fill="currentColor" />
-            </div>
-            <div>
-              <div className="text-sm font-semibold text-heading">14+ Years</div>
-              <div className="text-xs text-body">Of IT excellence</div>
-            </div>
-          </motion.div>
         </motion.div>
       </div>
     </section>
