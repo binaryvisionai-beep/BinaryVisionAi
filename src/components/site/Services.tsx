@@ -68,13 +68,15 @@ export function Services() {
           {services.map((s, i) => (
             <motion.div
               key={s.title}
+              onClick={() => setActiveIndex(i)}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-80px" }}
               transition={{ duration: 0.5, delay: i * 0.08, ease }}
-              className="group relative rounded-2xl bg-background p-7 ring-1 ring-border transition-all duration-300 hover:-translate-y-2 hover:shadow-brand hover:ring-primary-glow/40"
+              className="group cursor-pointer relative rounded-2xl bg-background p-7 ring-1 ring-border transition-all duration-300 hover:-translate-y-2 hover:shadow-brand hover:ring-primary-glow/40"
             >
               <div className="absolute inset-0 rounded-2xl bg-gradient-brand opacity-0 group-hover:opacity-[0.03] transition-opacity" />
+              
               <div className="grid h-14 w-14 place-items-center rounded-xl bg-gradient-brand text-white shadow-glow transition-transform group-hover:scale-110">
                 <s.icon size={24} />
               </div>
@@ -82,12 +84,9 @@ export function Services() {
               <h3 className="mt-6 font-display text-xl text-heading">{s.title}</h3>
               <p className="mt-3 text-sm text-body leading-relaxed">{s.body}</p>
 
-              <button
-                onClick={() => setActiveIndex(i)}
-                className="mt-6 inline-flex items-center gap-1 text-sm font-semibold text-primary group-hover:gap-2 transition-all"
-              >
+              <div className="mt-6 inline-flex items-center gap-1 text-sm font-semibold text-primary group-hover:gap-2 transition-all">
                 Explore service <ArrowUpRight size={16} />
-              </button>
+              </div>
             </motion.div>
           ))}
         </div>
@@ -109,7 +108,7 @@ export function Services() {
               exit={{ scale: 0.9, opacity: 0, y: 40 }}
               transition={{ duration: 0.4, ease }}
               onClick={(e) => e.stopPropagation()}
-              className="relative w-full max-w-2xl rounded-3xl bg-background p-8 shadow-brand ring-1 ring-border"
+              className="relative w-full max-w-2xl rounded-3xl bg-background p-8 shadow-brand ring-1 ring-border max-h-[85vh] overflow-y-auto"
             >
               <button
                 onClick={() => setActiveIndex(null)}
