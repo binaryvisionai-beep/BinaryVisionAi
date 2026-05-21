@@ -44,7 +44,7 @@ export function Footer() {
           <h4 className="font-display text-lg text-white">Official Info</h4>
           <ul className="mt-5 space-y-3 text-sm text-white/70">
             {/* <li>1280 Market Street, San Francisco</li> */}
-            <li>77559 01707</li>
+            {/* <li>77559 01707</li> */}
             <li>binaryvisionai@gmail.com</li>
           </ul>
         </div>
