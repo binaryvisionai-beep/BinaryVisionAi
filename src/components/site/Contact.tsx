@@ -6,7 +6,7 @@ const ease = [0.4, 0, 0.2, 1] as const;
 
 const contacts = [
   // { icon: MapPin, title: "Our Office", body: "1280 Market Street, Suite 400\nSan Francisco, CA 94102" },
-  { icon: Phone, title: "Call Us Anytime", body: "77559 01707" },
+  // { icon: Phone, title: "Call Us Anytime", body: "77559 01707" },
   { icon: Mail, title: "Email Us", body: "binaryvisionai@gmail.com" },
 ];
 
@@ -82,7 +82,8 @@ export function Contact() {
         >
           <iframe
             title="Office location"
-            src="https://www.openstreetmap.org/export/embed.html?bbox=-122.43%2C37.77%2C-122.39%2C37.79&amp;layer=mapnik"
+            // src="https://www.openstreetmap.org/export/embed.html?bbox=-122.43%2C37.77%2C-122.39%2C37.79&amp;layer=mapnik"
+            src="https://www.google.com/maps?q=Dr,+Rafael+Pereira+Rd,+Comba,+Madgaon,+Goa+403601,+India&output=embed"
             className="absolute inset-0 w-full h-full grayscale-[20%]"
             loading="lazy"
           />

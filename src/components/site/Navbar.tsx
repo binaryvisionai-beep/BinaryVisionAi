@@ -41,7 +41,7 @@ export function Navbar() {
           <img
   src={logo}
   alt="Binary Vision AI"
-  className="h-14 md:h-16 w-auto object-contain filter-none transition-transform duration-300 hover:scale-[1.04]"
+  className="h-10 md:h-12 w-auto object-contain filter-none transition-transform duration-300 hover:scale-[1.04]"
   />
         </a>
 
