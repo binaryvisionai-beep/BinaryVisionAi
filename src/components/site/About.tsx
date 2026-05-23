@@ -36,7 +36,7 @@ export function About() {
             transition={{ duration: 0.5, ease }}
             className="inline-block text-xs font-bold uppercase tracking-[0.2em] text-primary mb-4"
           >
-            About Binary
+            About BinaryVisionAi
           </motion.span>
 
           <motion.h2
@@ -46,7 +46,8 @@ export function About() {
             transition={{ duration: 0.6, ease }}
             className="font-display text-3xl md:text-4xl lg:text-5xl tracking-tight"
           >
-            Designing the future with AI and automation.
+            {/* Designing the future with AI and automation. */}
+            We Don't Just Consult. <br className="hidden md:block" /> We Build.
           </motion.h2>
 
           <motion.p
@@ -56,23 +57,30 @@ export function About() {
             transition={{ duration: 0.6, delay: 0.1, ease }}
             className="mt-5 text-body leading-relaxed"
           >
-            We build modern, automation-focused solutions that replace repetitive
-            processes with intelligent workflows and scalable architecture.
+            {/* We build modern, automation-focused solutions that replace repetitive
+            processes with intelligent workflows and scalable architecture. */}
+          Binary Vision AI is a full-stack technology company that turns business problems into working digital systems - web apps, mobile apps, automation pipelines, and AI integrations, all engineered to perform and built to scale.
+
           </motion.p>
 
           <div className="mt-8 grid sm:grid-cols-2 gap-5">
             {[
               {
                 icon: ShieldCheck,
-                title: "AI-Driven Solutions",
-                body:
-                  "Custom AI systems that automate and scale business operations.",
-              },
+                // title: "AI-Driven Solutions",
+                title: "Full-Stack Builders",
+                // body:
+                  // "Custom AI systems that automate and scale business operations.",
+                  body: "From frontend to backend — we own the entire build, not just the advice.",
+
+                },
               {
                 icon: Rocket,
-                title: "Automation Experts",
-                body:
-                  "We replace manual work with intelligent workflows.",
+                // title: "Automation Experts",
+                // body:
+                //   "We replace manual work with intelligent workflows.",
+                title: "Systems That Scale",
+  body: "Every solution we ship is designed to grow with your business from day one.",
               },
             ].map((f, i) => (
               <motion.div
@@ -102,7 +110,7 @@ export function About() {
             className="mt-9"
           >
             <a href="#services" className="btn-gradient">
-              Learn more about us <ArrowRight size={18} />
+            See Our Services <ArrowRight size={18} />
             </a>
           </motion.div>
         </div>

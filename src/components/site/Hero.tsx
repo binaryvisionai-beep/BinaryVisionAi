@@ -38,7 +38,8 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 0.25, ease }}
             className="mt-6 max-w-xl text-base md:text-lg text-body leading-relaxed"
           >
-            Binary Vision AI builds practical AI solutions that automate tasks, improve efficiency, and create scalable digital systems for growing businesses.
+            {/* Binary Vision AI builds practical AI solutions that automate tasks, improve efficiency, and create scalable digital systems for growing businesses. */}
+            From custom web and mobile apps to intelligent automation and AI integrations - we design, build, and scale the digital systems that power modern businesses.
           </motion.p>
 
           <motion.div
@@ -59,22 +60,22 @@ export function Hero() {
             className="mt-12 flex flex-wrap items-center gap-x-6 gap-y-4 sm:gap-8"
           >
             <div>
-              <div className="font-display text-2xl font-bold text-heading">AI Solutions</div>
-              <div className="text-xs text-body uppercase tracking-wider">Intelligent Automation</div>
+              <div className="font-display text-2xl font-bold text-heading">Web & Mobile Apps</div>
+              <div className="text-xs text-body uppercase tracking-wider">Built for Every Device</div>
             </div>
             <div className="h-10 w-px bg-border" />
             <div>
-              <div className="font-display text-2xl font-bold text-heading">Modern Tech Stack</div>
-              <div className="text-xs text-body uppercase tracking-wider">Latest AI & Web Technologies</div>
+              <div className="font-display text-2xl font-bold text-heading">AI Integrations</div>
+              <div className="text-xs text-body uppercase tracking-wider">Smart Systems, Real Results</div>
             </div>
             <div className="h-10 w-px bg-border" />
             <div>
-              <div className="font-display text-2xl font-bold text-heading">Scalable Systems</div>
-              <div className="text-xs text-body uppercase tracking-wider">Designed for Growth</div>
+              <div className="font-display text-2xl font-bold text-heading">Custom Automation</div>
+              <div className="text-xs text-body uppercase tracking-wider">Eliminate Repetitive Work</div>
             </div>
             <div>
-              <div className="font-display text-2xl font-bold text-heading">Smart Workflows</div>
-              <div className="text-xs text-body uppercase tracking-wider">Process Optimization</div>
+              <div className="font-display text-2xl font-bold text-heading">End-to-End Systems</div>
+              <div className="text-xs text-body uppercase tracking-wider">From Idea to Deployment</div>
             </div>
           </motion.div>
           

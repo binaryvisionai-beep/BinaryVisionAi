@@ -38,7 +38,7 @@ export function Blog() {
         <SectionHeader
           eyebrow="Insights"
           title={<>What We Build & Learn</>}
-          description="Real-world thinking behind the AI systems and automations we create."
+          description="No fluff — just real thinking on how we build, what we've learned, and where technology is taking businesses next."
         />
 
         <div className="mt-14 grid md:grid-cols-2 lg:grid-cols-3 gap-7">

@@ -42,7 +42,7 @@ function Index() {
         <Stats />
         {/* <Pricing /> */}
         {/* <Testimonials /> */}
-        <Blog />
+        {/* <Blog /> */}
         <CtaStrip />
         <Contact />
       </main>

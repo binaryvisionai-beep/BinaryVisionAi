@@ -21,11 +21,21 @@ export function Footer() {
             Binary Vision AI delivers premium IT services that help ambitious businesses scale faster, ship safer and grow smarter.
           </p>
           <div className="mt-6 flex gap-3">
-            {[Facebook, Twitter, Linkedin, Instagram].map((Icon, i) => (
+            {/* {[Facebook, Twitter, Linkedin, Instagram].map((Icon, i) => (
               <a key={i} href="#" className="grid h-10 w-10 place-items-center rounded-full bg-white/10 hover:bg-gradient-brand transition-all duration-300 hover:scale-110" aria-label="Social link">
                 <Icon size={16} />
               </a>
-            ))}
+            ))} */}
+            {[
+  { Icon: Facebook, href: "#" },
+  { Icon: Twitter, href: "#" },
+  { Icon: Linkedin, href: "#" },
+  { Icon: Instagram, href: "https://www.instagram.com/binaryvisionai?igsh=cjNhdjVwNG8xYmE4" },
+].map(({ Icon, href }, i) => (
+  <a key={i} href={href} target="_blank" rel="noopener noreferrer" className="grid h-10 w-10 place-items-center rounded-full bg-white/10 hover:bg-gradient-brand transition-all duration-300 hover:scale-110" aria-label="Social link">
+    <Icon size={16} />
+  </a>
+))}
           </div>
         </div>
 

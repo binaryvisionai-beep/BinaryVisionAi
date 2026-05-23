@@ -30,7 +30,7 @@ const services = [
   },
   {
     icon: Cloud,
-    title: "API & Backend Integration",
+    title: "API & Backend Systems",
     body: "Robust backend systems, third-party integrations, and APIs that power your digital ecosystem.",
     details: [
       "Custom backend architecture",
@@ -85,7 +85,7 @@ export function Services() {
               <p className="mt-3 text-sm text-body leading-relaxed">{s.body}</p>
 
               <div className="mt-6 inline-flex items-center gap-1 text-sm font-semibold text-primary group-hover:gap-2 transition-all">
-                Explore service <ArrowUpRight size={16} />
+              See details <ArrowUpRight size={16} />
               </div>
             </motion.div>
           ))}
